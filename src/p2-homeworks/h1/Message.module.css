@@ -1,0 +1,59 @@
+.message {
+    margin: 10px 0 0 10px;
+
+}
+
+.img {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    border: 1px solid gray;
+    float: left;
+    margin: 48px 10px 0 0;
+}
+
+.content {
+    height: 54px;
+    width: 190px;
+    background-color: #082103;
+    float: left;
+    margin-top: 30px;
+    border-radius: 3px;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.content::after {
+    content: "";
+    z-index: 0;
+    position: absolute;
+    top: 140px;
+    left: 54px;
+    border: 10px solid transparent;
+    border-right: 10px solid #082103;
+    border-bottom: 10px solid #082103;
+}
+
+.name {
+    color: #9793B9;
+    font-size: 14px;
+}
+
+.messages {
+    color: white;
+    font-size: 14px;
+}
+
+.time {
+    color: #63855c;
+    position: relative;
+    left: 145px;
+    bottom: 5px;
+    z-index: 1;
+    font-size: 16px;
+}
+
+.clear {
+    clear: both;
+}
