@@ -25,7 +25,8 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
         }else {
             setError(false)
             alert(`Hello ${name} !`)
-            addUserCallback(name)
+            addUserCallback(name);
+            setName("")
         }
     };
 
