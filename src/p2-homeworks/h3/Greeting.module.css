@@ -1,7 +1,27 @@
-.someClass {
 
+.errorFalse {
+    border: 1px solid red;
 }
 
-.error {
-    border: 1px solid red;
+input {
+    margin: 0 10px 0 10px;
+    border-radius: 5px;
+}
+.content {
+    text-align: center;
+    border: 1px solid blueviolet;
+    border-radius: 5px;
+    width: 300px;
+    padding: 5px;
+    margin: 0 auto;
+}
+.button {
+    background: orangered;
+    padding: 3px;
+    outline: none;
+    border-radius: 5px;
+}
+.totalUsers {
+    display: inline-block;
+    margin: 10px;
 }
