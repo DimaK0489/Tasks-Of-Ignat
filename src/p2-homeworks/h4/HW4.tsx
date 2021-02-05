@@ -24,7 +24,6 @@ function HW4() {
             homeworks 4
 
             <div className={s.column}>
-                {/*should work (должно работать)*/}
                 <SuperInputText
                     value={text}
                     onChangeText={setText}
