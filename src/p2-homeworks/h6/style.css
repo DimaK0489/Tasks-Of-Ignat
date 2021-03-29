@@ -1,0 +1,17 @@
+.wrapper-hw6 {
+    text-align: left;
+    padding: 20px;
+}
+.button-hw6 {
+    margin: 5px;
+    padding: 15px;
+}
+
+.input-hw6 {
+    padding: 5px 60px;
+    background-color: darkslategrey;
+    border: solid 2px white;
+    border-radius: 20px;
+    outline: none;
+    color: white;
+}
