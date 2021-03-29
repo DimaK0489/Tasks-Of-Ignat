@@ -1,0 +1,28 @@
+.header {
+    display: flex;
+    align-items: center;
+    background-color: green;
+    color: black;
+    padding: 15px;
+    cursor: pointer;
+    box-shadow: 0px 3px 5px green;
+    transition-duration: 700ms;
+    transform: translate(-1500px);
+}
+.header:hover {
+    transition-duration: 700ms;
+    transform: translate(0px);
+}
+.links {
+    margin-right: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.links:hover{
+    color: blue;
+}
+.active {
+    color: #000;
+    font-weight: bold;
+}

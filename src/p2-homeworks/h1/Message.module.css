@@ -1,6 +1,5 @@
 .message {
     margin: 10px 0 0 10px;
-
 }
 
 .img {
@@ -28,7 +27,7 @@
     content: "";
     z-index: 0;
     position: absolute;
-    top: 140px;
+    top: 192px;
     left: 54px;
     border: 10px solid transparent;
     border-right: 10px solid #082103;
