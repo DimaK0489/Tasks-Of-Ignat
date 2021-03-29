@@ -1,0 +1,26 @@
+.container {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+.mySpan {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    right: 23px;
+    padding: 5px 10px;
+    color: white;
+    background-color: black;
+}
+.clock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.clock .text {
+    font-size: 15px;
+    color: black;
+    margin-top: -20px;
+}
