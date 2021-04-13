@@ -1,0 +1,17 @@
+.hw11 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+    position: relative;
+}
+.superRange {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.values {
+    display: flex;
+    justify-content: space-between;
+}
