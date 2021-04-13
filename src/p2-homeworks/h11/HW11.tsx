@@ -26,7 +26,6 @@ function HW11() {
             </div>
 
             <div>
-
                 <SuperDoubleRange
                     value={[value1, value2]}
                     onChangeRange={onChangeRange}
