@@ -5,7 +5,6 @@ import {AppStoreType} from "../h10/bll/store";
 import {changeThemeC, ThemeStateType} from "./bll/themeReducer";
 import SuperRadio from "../h7/common/c6-SuperRadio/SuperRadio";
 
-//export const themes: string[] = ['dark', 'red', 'some', "blue"];
 
 export function HW12() {
 
