@@ -1,16 +1,18 @@
+.container {
+    text-align: center;
+}
 .wrapper-hw6 {
-    margin: 5px;
-    text-align: left;
+    text-align: center;
+    margin: auto;
     padding: 20px;
+    cursor: pointer;
 }
 .button-hw6 {
-    margin: 5px;
-    padding: 15px;
+    position: relative;
 }
-
 .input-hw6 {
     padding: 5px 60px;
-    background-color: darkslategrey;
+    background-color: #49105b;
     border: solid 2px white;
     border-radius: 20px;
     outline: none;

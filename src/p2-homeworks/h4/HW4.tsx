@@ -6,14 +6,13 @@ import SuperCheckbox from "./common/c3-SuperCheckbox/SuperCheckbox";
 
 function HW4() {
     const [text, setText] = useState<string>("");
-    let red: boolean
-    text ? red = false : red =true
+
     const error = text ? "" : "error";
     const showAlert = () => {
         if (error) {
-            alert("введите текст...");
+            alert("Enter text...");
         } else {
-            alert(text); // если нет ошибки показать текст
+            alert(text);
         }
     }
 
@@ -31,36 +30,26 @@ function HW4() {
                     onChangeText={setText}
                     onEnter={showAlert}
                     error={error}
-                     //className={s.blue} // проверьте, рабоет ли смешивание классов
+                    className={s.blue} // смешивание классов
                 />
-
-                {/*should work (должно работать)*/}
                 <SuperButton
-                    red={red} // пропсу с булевым значением не обязательно указывать true
+                    red
                     onClick={showAlert}
                 >
-                    delete {/*// название кнопки попадёт в children*/}
+                    delete
                 </SuperButton>
 
-                {/*should work (должно работать)*/}
                 <SuperCheckbox
                     checked={checked}
                     onChangeChecked={setChecked}
                 >
-                    some text {/*// этот текст попадёт в children*/}
+                    some text
+                    <SuperCheckbox
+                        checked={checked}
+                        onChange={testOnChange}/>
                 </SuperCheckbox>
 
-                {/*// onChange тоже должен работать*/}
-                <SuperCheckbox checked={checked} onChange={testOnChange}/>
-
             </div>
-
-            <hr/>
-            {/*для личного творчества, могу проверить*/}
-            {/*<AlternativeSuperInputText/>*/}
-            {/*<AlternativeSuperButton/>*/}
-            {/*<AlternativeSuperCheckbox/>*/}
-            <hr/>
         </div>
     );
 }

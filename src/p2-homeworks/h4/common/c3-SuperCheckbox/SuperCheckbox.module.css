@@ -1,7 +1,8 @@
 .checkbox {
-
+    background: blueviolet;
 }
 
 .spanClassName {
-
+    color: orange;
+    opacity: .300 ;
 }

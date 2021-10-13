@@ -11,8 +11,8 @@ type AffairsPropsType = {
 
 function Affairs(props: AffairsPropsType) {
     const mappedAffairs = props.data.map((a: AffairType) => (
-        <Affair // should work
-            key={a._id} // кеи ОБЯЗАТЕЛЬНЫ в 99% - так что лучше их писать всегда при создании компонент в мапе
+        <Affair
+            key={a._id}
             affair={a}
             deleteAffairCallback={props.deleteAffairCallback}
         />
@@ -36,10 +36,10 @@ function Affairs(props: AffairsPropsType) {
 
             {mappedAffairs}
 
-            <button className={s.button} onClick={setAll}>All</button>
-            <button className={s.button} onClick={setHigh}>High</button>
-            <button className={s.button} onClick={setMiddle}>Middle</button>
-            <button className={s.button} onClick={setLow}>Low</button>
+            <button className={s.buttonFilter} onClick={setAll}>All</button>
+            <button className={s.buttonFilter} onClick={setHigh}>High</button>
+            <button className={s.buttonFilter} onClick={setMiddle}>Middle</button>
+            <button className={s.buttonFilter} onClick={setLow}>Low</button>
         </div>
     );
 }
