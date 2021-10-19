@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import {requestAPI} from "./RequestAPI";
-
+import s from './HW13.module.css'
 
 export const Request = () => {
 
@@ -20,9 +20,9 @@ export const Request = () => {
     return (
         <div>
             <input type="checkbox" onClick={changeCheckboxStatus}/> Change status <br/>
-            <button onClick={makeRequest}>Request</button>
+            <button className={s.button} onClick={makeRequest}>Request</button>
             <br/>
-            {request}
+            <span className={s.request}>{request}</span>
         </div>
     )
 }

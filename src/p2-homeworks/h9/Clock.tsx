@@ -31,6 +31,7 @@ function Clock() {
     return (
         <div className={s.container}>
             <div
+                className={s.clock}
                 onMouseEnter={onMouseEnter}
                 onMouseLeave={onMouseLeave}
             >
@@ -43,7 +44,6 @@ function Clock() {
 
             <SuperButton onClick={start}>start</SuperButton>
             <SuperButton onClick={stop}>stop</SuperButton>
-
         </div>
     );
 }

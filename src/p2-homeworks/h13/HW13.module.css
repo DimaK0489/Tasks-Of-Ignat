@@ -3,3 +3,21 @@
     width: 300px;
     text-align: center;
 }
+.button {
+    margin-top: 25px;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: orange;
+}
+.button:hover {
+    background: orangered;
+    box-shadow: 0 5px 10px rgba(217, 44, 104, 0.5);
+    color: white;
+}
+.request {
+    text-align: center;
+    font-family: "Comfortaa", cursive;
+    font-size: 30px;
+    color: #49105b;
+}

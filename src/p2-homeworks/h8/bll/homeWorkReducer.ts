@@ -15,7 +15,6 @@ type SortNameAgeTape = {
 
 type ActionType = SortNameUpTape | SortNameDownTape | SortNameAgeTape
 
-
 export const homeWorkReducer = (state: InitialStateType, action: ActionType): InitialStateType => {
     switch (action.type) {
         case "sort": {

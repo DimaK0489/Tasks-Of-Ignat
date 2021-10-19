@@ -15,29 +15,32 @@ function HW11() {
     }
 
     return (
-        <div className={style.hw11}>
-
-            <div className={style.superRange}>
-                <span>{value1}</span>
-                <SuperRange
-                    value={value1}
-                    onChangeRange={setValue1}
-                />
-            </div>
-
-            <div>
-                <SuperDoubleRange
-                    value={[value1, value2]}
-                    onChangeRange={onChangeRange}
-                    step={2}
-                />
-                <div className={style.values}>
+        <>
+            <hr/>
+            homeworks 11
+            <div className={style.hw11}>
+                <div className={style.superRange}>
                     <span>{value1}</span>
-                    <span>{value2}</span>
+                    <SuperRange
+                        value={value1}
+                        onChangeRange={setValue1}
+                    />
                 </div>
-            </div>
 
-        </div>
+                <div>
+                    <SuperDoubleRange
+                        value={[value1, value2]}
+                        onChangeRange={onChangeRange}
+                        step={2}
+                    />
+                    <div className={style.values}>
+                        <span>{value1}</span>
+                        <span>{value2}</span>
+                    </div>
+                </div>
+
+            </div>
+        </>
     );
 }
 

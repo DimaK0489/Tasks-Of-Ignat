@@ -1,6 +1,5 @@
 import React from "react";
-import SuperButton from "../h4/common/c2-SuperButton/SuperButton";
-import { AppStoreType } from "./bll/store";
+import {AppStoreType} from "./bll/store";
 import {useDispatch, useSelector} from "react-redux";
 import {loadingAC} from "./bll/loadingReducer";
 import preloader from "./assets/preloader.svg"
@@ -12,29 +11,23 @@ function HW10() {
 
     const setLoading = () => {
         dispatch(loadingAC(true))
-        setTimeout( () => dispatch(loadingAC(false)),3000)
+        setTimeout(() => dispatch(loadingAC(false)), 3000)
     };
 
     return (
-        <div className={s.HW10}>
+        <>
             <hr/>
             homeworks 10
-
-            {loading
-                ? (
-                    <img src={preloader} alt={""}/>
-                ) : (
-                    <div className={s.button}>
-                        <SuperButton onClick={setLoading}>set loading...</SuperButton>
-                    </div>
-                )
-            }
-
-            <hr/>
-            {/*для личного творчества, могу проверить*/}
-            {/*<Alternative/>*/}
-            <hr/>
-        </div>
+            <div className={s.HW10}>
+                {loading
+                    ? (
+                        <img src={preloader} alt={""}/>
+                    ) : (
+                        <button className={s.button} onClick={setLoading}>Set loading...</button>
+                    )
+                }
+            </div>
+        </>
     );
 }
 

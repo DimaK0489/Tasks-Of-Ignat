@@ -3,15 +3,19 @@
     flex-direction: column;
     width: 50%;
     margin: 0 auto;
-    position: relative;
 }
 .superRange {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
+    font-size: 25px;
+    color: orange;
+    border: 1px solid red;
+    border-radius: 10px;
 }
 .values {
     display: flex;
     justify-content: space-between;
+    font-size: 25px;
+    color: orange;
 }

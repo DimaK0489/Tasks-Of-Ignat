@@ -1,9 +1,11 @@
 .container {
-    width: 500px;
+    width: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
+    border: 1px solid blueviolet;
+    border-radius: 10px;
 }
 .mySpan {
     display: flex;
@@ -18,6 +20,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 25px;
+    font-family: "Comfortaa", cursive;
+    color: red;
 }
 .clock .text {
     font-size: 15px;

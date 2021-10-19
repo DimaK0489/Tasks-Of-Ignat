@@ -1,6 +1,15 @@
-.block {
-    display: flex;
-    margin: 15px;
-    justify-content: space-between;
-    width: 300px;
+.container {
+    display: block;
+    justify-content: space-around;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 200px;
+    height: 120px;
+    background-color: #5cbbf3;
+}
+.buttons {
+    text-align: center;
+    margin: auto;
 }

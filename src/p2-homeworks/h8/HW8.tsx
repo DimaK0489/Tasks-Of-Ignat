@@ -17,10 +17,10 @@ function HW8() {
     const [people, setPeople] = useState<InitialStateType>(initialPeople);
 
     const finalPeople = people.map(p => (
-        <div key={p._id} className={s.block}>
-            <span>{p.name}</span>
+        <li key={p._id}>
+            {p.name}
             {p.age}
-        </div>
+        </li>
     ))
 
     const sortUp = () => setPeople(homeWorkReducer(initialPeople, {type: "sort", payload: "up"}))
@@ -28,21 +28,18 @@ function HW8() {
     const sortAge = () => setPeople(homeWorkReducer(initialPeople, {type: "check", payload: 18}))
 
     return (
-        <div>
+        <>
             <hr/>
             homeworks 8
-            <div className={"wrapper-hw6"}>
+            <div className={s.container}>
                 {finalPeople}
-                <div><SuperButton onClick={sortUp}>sort up</SuperButton></div>
-                <div><SuperButton onClick={sortDown}> sort down </SuperButton></div>
-                <div><SuperButton onClick={sortAge}> sort age </SuperButton></div>
             </div>
 
-            <hr/>
-            {/*для личного творчества, могу проверить*/}
-            {/*<AlternativePeople/>*/}
-            <hr/>
-        </div>
+            <div className={s.buttons}><SuperButton onClick={sortUp}> Sort Up </SuperButton></div>
+            <div className={s.buttons}><SuperButton onClick={sortDown}> Sort Down </SuperButton></div>
+            <div className={s.buttons}><SuperButton onClick={sortAge}> Sort Age </SuperButton></div>
+
+        </>
     );
 }
 

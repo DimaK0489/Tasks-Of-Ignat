@@ -3,7 +3,6 @@ import SuperSelect from "./common/c5-SuperSelect/SuperSelect";
 import SuperRadio from "./common/c6-SuperRadio/SuperRadio";
 import s from "./hw7.module.css"
 
-
 const arr: string[] = ["x", "y", "z"];
 
 function HW7() {
@@ -15,6 +14,7 @@ function HW7() {
             homeworks 7
             <div className={s.wrapper}>
                 <SuperSelect
+                    className={s.select}
                     options={arr}
                     value={value}
                     onChangeOption={onChangeOption}
@@ -28,12 +28,6 @@ function HW7() {
                     onChangeOption={onChangeOption}
                 />
             </div>
-
-            <hr/>
-            {/*для личного творчества, могу проверить*/}
-            {/*<AlternativeSuperSelect/>*/}
-            {/*<AlternativeSuperRadio/>*/}
-            <hr/>
         </div>
     );
 }
