@@ -26,7 +26,7 @@
     "typescript": "~3.7.2",
     "uuid": "^8.3.2"
   },
-  "homepage": "https://DimaK0489.github.io/TasksOfIgnat",
+  "homepage": "https://DimaK0489.github.io/task01",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
