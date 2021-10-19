@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/task01/static/css/main.273c4ac5.chunk.css",
+    "main.js": "/task01/static/js/main.bf0a526a.chunk.js",
+    "main.js.map": "/task01/static/js/main.bf0a526a.chunk.js.map",
+    "runtime-main.js": "/task01/static/js/runtime-main.26940467.js",
+    "runtime-main.js.map": "/task01/static/js/runtime-main.26940467.js.map",
+    "static/js/2.7d37b30f.chunk.js": "/task01/static/js/2.7d37b30f.chunk.js",
+    "static/js/2.7d37b30f.chunk.js.map": "/task01/static/js/2.7d37b30f.chunk.js.map",
+    "index.html": "/task01/index.html",
+    "precache-manifest.0bf16ea16cd60b9e96dd627f85e4f238.js": "/task01/precache-manifest.0bf16ea16cd60b9e96dd627f85e4f238.js",
+    "service-worker.js": "/task01/service-worker.js",
+    "static/css/main.273c4ac5.chunk.css.map": "/task01/static/css/main.273c4ac5.chunk.css.map",
+    "static/js/2.7d37b30f.chunk.js.LICENSE.txt": "/task01/static/js/2.7d37b30f.chunk.js.LICENSE.txt",
+    "static/media/preloader.svg": "/task01/static/media/preloader.729c9aa3.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.26940467.js",
+    "static/js/2.7d37b30f.chunk.js",
+    "static/css/main.273c4ac5.chunk.css",
+    "static/js/main.bf0a526a.chunk.js"
+  ]
+}
